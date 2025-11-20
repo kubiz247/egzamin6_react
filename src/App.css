@@ -1,38 +1,97 @@
-.App {
-  text-align: center;
+.container {
+    padding: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+    font-family: Inter, Arial;
+    color: #222;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+    text-align: center;
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 40px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 22px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.card {
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(15,23,42,0.08);
+    text-align: center;
 }
-
-.App-link {
-  color: #61dafb;
+.placeholder {
+    background: #eef2f6;
+    height: 80px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #9aa3ad;
+    margin-bottom: 12px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.name {
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+.qty {
+    color: #666;
+    font-size: 13px;
+    margin-bottom: 12px;
+}
+.btns {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+.btn {
+    min-width: 36px;
+    height: 32px;
+    border-radius: 8px;
+    border: none;
+    font-weight: 700;
+    cursor: pointer;
+}
+.btn:disabled {
+    opacity: 0.45;
+    cursor: not-allowed;
+}
+.minus {
+    background: #374151;
+    color: #fff;
+}
+.plus {
+    background: #374151;
+    color: #fff;
+}
+.taken-box {
+    background: #e0f2fe;
+    border-left: 6px solid #0284c7;
+    color: #0284c7;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 800px;
+    margin: 30px auto;
+}
+.alert-box {
+    background: #fee2e2;
+    border: 1px solid #dc2626;
+    color: #dc2626;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 800px;
+    margin: 30px auto;
+}
+.confirm {
+    display: block;
+    margin: 20px auto;
+    background: #2563eb;
+    color: #fff;
+    padding: 10px 22px;
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: pointer;
 }
